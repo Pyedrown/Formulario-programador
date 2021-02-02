@@ -126,6 +126,9 @@ input[type="reset"], input#enviar {
     width: 7vw;
     height: 3.5vw;
     font-size: 1.5vw;
+    border: none;
+    background-color:rgb(150, 150, 150);
+    color: white;
 }
 
 input#enviar {
@@ -133,7 +136,7 @@ input#enviar {
 }
 
 input[type="radio"], input[type="checkbox"] {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 /*Adaptações*/
