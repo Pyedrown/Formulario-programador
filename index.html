@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Formulário</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <p id="nome-formulario">Formulário para programadores</p>
+        </header>
+        <main>
+            <form method="POST" action="">
+                <h4>Programador(a)</h4>
+                <input type="text" title="nome" name="nome" placeholder="Nome">
+                <input type="text" title="Sobre-nome" name="sobrenome" placeholder="Sobre-nome">
+                <input type="text" title="Idade" name="idade" placeholder="Idade">
+                <div class="genero">
+                    <input type="radio" name="genero" value="masculino"/>
+                    <p>Masculino</p>
+                </div>
+                <div class="genero">
+                    <input type="radio" name="genero" value="feminino"/>
+                    <p>Feminino</p>
+                </div>
+                <hr>
+                <!------------------------------->
+                <h4>Faculdade, ou cursando</h4>
+                <div class="radio-faculdade">
+                    <input type="radio" name="curso" value="sistemas-de-informacao">
+                    <p class="radio-nome-faculdade">Sistema de informações</p>
+                </div>
+                <br>
+                <div class="radio-faculdade">
+                    <input type="radio" name="curso" value="engenharia-de-software"/>
+                    <p class="radio-nome-faculdade">Engenharia de software</p>
+                </div>
+                <br>
+                <div class="radio-faculdade">
+                    <input type="radio" name="curso" value="ciencia-da-computação"/>
+                    <p class="radio-nome-faculdade">Ciência da computação</p>
+                </div>
+                <br>
+                <div class="radio-faculdade">
+                    <input type="radio" name="curso" value="nenhum"/>
+                    <p class="radio-nome-faculdade">Nenhum</p>
+                </div>
+                <hr>
+                <!------------------------------->
+                <h4>Tecnologias que tem domínio</h4>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="python"/><p>Python</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="java"/>
+                    <p>Java</p>
+
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="javascript"/><p>Javascript</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="htmlecss"/>
+                    <p>HTML e CSS</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="ruby"/>
+                    <p>Ruby</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="typescript"/>
+                    <p>Typescript</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="cmaismais"/>
+                    <p>C++</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="csharp"/>
+                    <p>C#</p>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="tecnologias" value="php"/>
+                    <p>PHP</p>
+                </div>
+                <hr>
+                <!------------------------------->
+                <input type="reset" value="Limpar"/>
+                <input id="enviar" type="submit" value="Enviar"/>
+            </form>
+        </main>
+    </body>
+</html>

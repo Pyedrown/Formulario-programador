@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace
+}
+
+/*Menu*/
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(120, 120, 120);
+}
+
+header > p#nome-formulario {
+    margin: 0;
+    font-size: 5vw;
+    color: white;
+    line-height: 100px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/*Formulário*/
+
+main {
+    border: solid 2.5px rgb(49, 49, 49);
+    width: 80%;
+    height: auto;
+    margin: 10% auto;
+    position: relative;
+}
+
+main > form {
+    padding: 10px;
+}
+
+h4 {
+    font-size: 2vw;
+}
+
+form > input {
+    margin: 5px;
+}
+
+form > input[type="text"] {
+    background-color: rgb(150,150,150);
+    border: none;
+    width: 20%;
+    font-size: 1.5vw;
+}
+
+form > input[type="text"]:focus {
+    background-color: rgb(200,200,200);
+}
+
+p {
+    display: inline-block;
+}
+
+form > div.genero {
+    display: inline-block;
+}
+
+div > p  {
+    font-size: 1.5vw;
+}
+
+div.radio-faculdade {
+    width: 30vw;
+}
+
+div.radio-faculdade > input[type="radio"] {
+    float: left;
+}
+
+div.radio-faculdade > p.radio-nome-faculdade {
+    width: 30vw;
+    margin-left: 2vw;
+}
+
+div.radio-faculdade > input[type="radio"], p.radio-nome-faculdade {
+    display: block;
+}
+
+div > input[type="radio"] {
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+form > div.checkbox {
+    display: inline-block;
+    width: auto;
+    border: 2px solid rgba(200, 200, 200, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+form > div.checkbox:hover {
+    border-color: rgba(200,200,200, 0.5);
+}
+
+div.checkbox > input[type=checkbox],p {
+    display: inline-block;
+    margin-right: 10;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+div.checkbox > input[type=checkbox] {
+    float: left;
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+div.checkbox > p {
+    width: auto;
+    float: right;
+}
+
+input[type="reset"], input#enviar {
+    width: 7vw;
+    height: 3.5vw;
+    font-size: 1.5vw;
+}
+
+input#enviar {
+    float: right;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    cursor:pointer;
+}
+
+/*Adaptações*/
+
+@media screen and (max-width: 915px) {
+    form > div.genero {
+        width: auto; 
+    }
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    form > input[name="nome"], input[name="sobrenome"] {
+        width: auto;
+    }
+}   
+
+@media screen and (max-width: 425px) {
+    h4 {
+        font-size: 20px;
+    }
+
+    form > input[type="text"] {
+        font-size: 15px;
+        width: auto;
+    }
+
+    div.genero > input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    div.genero > p {
+        font-size: 17px;
+    }
+    
+    div.radio-faculdade {
+        width: 250px;
+        height: 20px;
+    }
+
+    div.radio-faculdade > input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    div.radio-faculdade > p.radio-nome-faculdade {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    div.radio-faculdade > input[type="radio"], p.radio-nome-faculdade {
+        display: inline-block;
+    }
+    
+    div.checkbox > input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+
+    div.checkbox > p {
+        font-size: 17px;
+    }
+
+    input[type="reset"], input#enviar {
+        width: 70px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    header > p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    main {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    div.radio-faculdade {
+        height: auto;
+        height: auto;
+    }
+
+    div.radio-faculdade > p.radio-nome-faculdade {
+        width: auto;
+    }
+}
+
+
